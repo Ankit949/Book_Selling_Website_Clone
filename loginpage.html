@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<body >
+<form name="loginForm" method="post" action="login.php">
+
+<table width="60%" height="50%" align="center">
+
+<tr>
+<td colspan=2><center><font size=9 color=yellow><b><i><q> login page</q></i></b></font></center></td>
+</tr>
+<marquee behaviour="scroll" direction="right" color="red">All the fields are mandatory</marquee>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=40 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=40 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="Submit" onclick="return check(this.form)" value="Login"></td><BR><br>
+<button><a href="D:\html\project\Signup">SIGN UP</a></button>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "bookblinder" && form.pwd.value == "12345")
+{
+alert(thank you! you are now allowed to proceed further")
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
